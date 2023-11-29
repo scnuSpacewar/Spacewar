@@ -1594,35 +1594,39 @@ def info1(): #width, height = 900, 750
 
         screen.blit(infobackground1,(0,0))
         label("게임 정보",width/2-115,70,60,orange)
-        label("1P",width/2-200,height/2-195,40,green)
-        label("2P",width/2-50,height/2-195,40,green)
-        label("공격 :",width/2-360,height/2-120,35,purple)
-        label("이동 :",width/2-360,height/2-40,35,purple)
-        label("미사일 :",width/2-390,height/2+40,35,purple)
-        label("방어막 :",width/2-390,height/2+120,35,purple)
+        label("1P",width/2-250,height/2-195,40,purple)
+        label("(1인)",width/2-195,height/2-195,35,orange)
+        label("2P",width/2-50,height/2-195,40,purple)
+        label("공격 :",width/2-390,height/2-120,35,purple)
+        label("이동 :",width/2-390,height/2-40,35,purple)
+        label("미사일 :",width/2-420,height/2+40,35,purple)
+        label("방어막 :",width/2-420,height/2+120,35,purple)
         #1P Keys
-        label("M 키",width/2-210,height/2-120,35,purple)
-        label("방향키",width/2-225,height/2-40,35,purple)
-        label("< 키",width/2-210,height/2+40,35,purple)
-        label("> 키",width/2-210,height/2+120,35,purple)
+        label("M 키",width/2-285,height/2-120,35,purple)
+        label("(Z 키)",width/2-195,height/2-120,30,orange)
+        label("방향키",width/2-290,height/2-40,35,purple)
+        label("< 키",width/2-285,height/2+40,35,purple)
+        label("(X 키)",width/2-195,height/2+40,30,orange)
+        label("> 키",width/2-285,height/2+120,35,purple)
+        label("(C 키)",width/2-195,height/2+120,30,orange)
         #2P Keys
         label("Ctrl 키",width/2-65,height/2-120,35,purple)
         label("R,D,F,G 키",width/2-85,height/2-40,35,purple)
         label("Shift 키",width/2-75,height/2+40,35,purple)
         label("Z 키",width/2-60,height/2+120,35,purple)
 
-        screen.blit(bulletupimg,(width/2+150,190))
-        label("bullet type up",width/2+200,190,20,brightblue)
-        screen.blit(speedupimg,(width/2+150,250))
-        label("shooting speed up",width/2+195,250,20,brightblue)
-        screen.blit(healthupimg,(width/2+150,310))
-        label("health up",width/2+200,310,20,brightblue)
-        screen.blit(liveup1img,(width/2+150,370))
-        label("live up",width/2+210,375,20,brightblue)
-        screen.blit(shieldupimg,(width/2+150,430))
-        label("shield up",width/2+200,430,20,brightblue)
-        screen.blit(missileupimg,(width/2+150,490))
-        label("missile up",width/2+200,490,20,brightblue)
+        screen.blit(bulletupimg,(width/2+150,height/2-185))
+        label("bullet type up",width/2+200,height/2-185,20,brightblue)
+        screen.blit(speedupimg,(width/2+150,height/2-125))
+        label("shooting speed up",width/2+195,height/2-125,20,brightblue)
+        screen.blit(healthupimg,(width/2+150,height/2-65))
+        label("health up",width/2+200,height/2-65,20,brightblue)
+        screen.blit(liveup1img,(width/2+150,height/2-5))
+        label("live up",width/2+210,height/2,20,brightblue)
+        screen.blit(shieldupimg,(width/2+150,height/2+55))
+        label("shield up",width/2+200,height/2+55,20,brightblue)
+        screen.blit(missileupimg,(width/2+150,height/2+115))
+        label("missile up",width/2+200,height/2+115,20,brightblue)
 
         Button("시작",width/2-245,height/2+250,100,50,green,brightgreen,gameloop1)
         Button("협동",width/2-115, height/2+250, 100, 50, green, brightgreen, cooperation1)
@@ -1641,37 +1645,41 @@ def info2(): #width, height = 1280, 900
                 quitgame()
 
         screen.blit(infobackground2,(0,0))
-        label("게임 정보",width/2-130,70,60,orange)
-
-        label("1P",width/2-200,height/2-195,40,green)
-        label("2P",width/2-50,height/2-195,40,green)
-        label("공격 :",width/2-360,height/2-120,35,purple)
-        label("이동 :",width/2-360,height/2-40,35,purple)
-        label("미사일 :",width/2-390,height/2+40,35,purple)
-        label("방어막 :",width/2-390,height/2+120,35,purple)
+        label("게임 정보",width/2-115,70,60,orange)
+        label("1P",width/2-250,height/2-195,40,purple)
+        label("(1인)",width/2-195,height/2-195,35,orange)
+        label("2P",width/2-50,height/2-195,40,purple)
+        label("공격 :",width/2-390,height/2-120,35,purple)
+        label("이동 :",width/2-390,height/2-40,35,purple)
+        label("미사일 :",width/2-420,height/2+40,35,purple)
+        label("방어막 :",width/2-420,height/2+120,35,purple)
         #1P Keys
-        label("M 키",width/2-210,height/2-120,35,purple)
-        label("방향키",width/2-225,height/2-40,35,purple)
-        label("< 키",width/2-210,height/2+40,35,purple)
-        label("> 키",width/2-210,height/2+120,35,purple)
+        label("M 키",width/2-285,height/2-120,35,purple)
+        label("(Z 키)",width/2-195,height/2-120,30,orange)
+        label("방향키",width/2-290,height/2-40,35,purple)
+        label("< 키",width/2-285,height/2+40,35,purple)
+        label("(X 키)",width/2-195,height/2+40,30,orange)
+        label("> 키",width/2-285,height/2+120,35,purple)
+        label("(C 키)",width/2-195,height/2+120,30,orange)
         #2P Keys
         label("Ctrl 키",width/2-65,height/2-120,35,purple)
-        label("R,D,F,G 키",width/2-75,height/2-40,35,purple)
+        label("R,D,F,G 키",width/2-85,height/2-40,35,purple)
         label("Shift 키",width/2-75,height/2+40,35,purple)
         label("Z 키",width/2-60,height/2+120,35,purple)
-
-        screen.blit(bulletupimg,(width/2+150,190))
-        label("bullet type up",width/2+200,190,20,brightblue)
-        screen.blit(speedupimg,(width/2+150,250))
-        label("shooting speed up",width/2+195,250,20,brightblue)
-        screen.blit(healthupimg,(width/2+150,310))
-        label("health up",width/2+200,310,20,brightblue)
-        screen.blit(liveup1img,(width/2+150,370))
-        label("live up",width/2+210,375,20,brightblue)
-        screen.blit(shieldupimg,(width/2+150,430))
-        label("shield up",width/2+200,430,20,brightblue)
-        screen.blit(missileupimg,(width/2+150,490))
-        label("missile up",width/2+200,490,20,brightblue)
+        
+        screen.blit(bulletupimg,(width/2+150,height/2-185))
+        label("bullet type up",width/2+200,height/2-185,20,brightblue)
+        screen.blit(speedupimg,(width/2+150,height/2-125))
+        label("shooting speed up",width/2+195,height/2-125,20,brightblue)
+        screen.blit(healthupimg,(width/2+150,height/2-65))
+        label("health up",width/2+200,height/2-65,20,brightblue)
+        screen.blit(liveup1img,(width/2+150,height/2-5))
+        label("live up",width/2+210,height/2,20,brightblue)
+        screen.blit(shieldupimg,(width/2+150,height/2+55))
+        label("shield up",width/2+200,height/2+55,20,brightblue)
+        screen.blit(missileupimg,(width/2+150,height/2+115))
+        label("missile up",width/2+200,height/2+115,20,brightblue)
+        
         Button("시작",width/2-245,height/2+250,100,50,green,brightgreen,gameloop2)
         Button("협동",width/2-115, height/2+250, 100, 50, green, brightgreen, cooperation2)
         Button("시작화면",width/2+15,height/2+250,100,50,blue,brightblue,intro2)
@@ -1836,12 +1844,12 @@ def gameloop1():
             if event.type == pygame.QUIT:
                 quitgame()
             if event.type == pygame.KEYUP:
-                if event.key == pygame.K_PERIOD:
+                if event.key == pygame.K_c:
                     if player1.shield > 0:
                         player1.shield -= 1
                         newshield1(player1.rect.center)
                         shield_sound.play()
-                if event.key == pygame.K_COMMA:
+                if event.key == pygame.K_x:
                     if player1.missile > 0:
                         player1.missile -= 1
                         newmissile(player1.rect.centerx,player1.rect.centery)
@@ -1852,7 +1860,7 @@ def gameloop1():
                        pause()
                 if event.key == pygame.K_ESCAPE:
                         quitgame()
-                if event.key == pygame.K_m:
+                if event.key == pygame.K_z:
                     player1.shoot()
 
         current_time = pygame.time.get_ticks()
@@ -2897,12 +2905,12 @@ def gameloop2():
             if event.type == pygame.QUIT:
                 quitgame()
             if event.type == pygame.KEYUP:
-                if event.key == pygame.K_PERIOD:
+                if event.key == pygame.K_c:
                     if player1.shield > 0:
                         player1.shield -= 1
                         newshield1(player1.rect.center)
                         shield_sound.play()
-                if event.key == pygame.K_COMMA:
+                if event.key == pygame.K_x:
                     if player1.missile > 0:
                         player1.missile -= 1
                         newmissile(player1.rect.centerx,player1.rect.centery)
@@ -2913,7 +2921,7 @@ def gameloop2():
                        pause()
                 if event.key == pygame.K_ESCAPE:
                         quitgame()
-                if event.key == pygame.K_m:
+                if event.key == pygame.K_z:
                     player1.shoot()
         current_time = pygame.time.get_ticks()
         elapsed_time = current_time - start_time - elapsed_pause_time
@@ -4059,7 +4067,7 @@ def cooperation1():
     speedup.rect.y = -3500
     ultbulletup = newultbulletup()
     ultbulletup.rect.y = - 1800
-    bulletup = newultbulletup()
+    ultbulletup = newultbulletup()
     ultbulletup.rect.y = - 1900
 
     running = True
@@ -4089,17 +4097,17 @@ def cooperation1():
                         newmissile(player1.rect.centerx-200,player1.rect.centery)
                         newmissile(player1.rect.centerx+200,player1.rect.centery)
                         missile_sound.play()
-                if event.key == pygame.K_z:
+                if event.key == pygame.K_a:
                     if player2.shield > 0:
                         player2.shield -= 1
                         newshield2(player2.rect.center)
                         shield_sound.play()
-                if event.key == pygame.K_LSHIFT:
+                if event.key == pygame.K_w:
                     if player2.missile > 0:
                         player2.missile -= 1
-                        newmissile(player1.rect.centerx,player1.rect.centery)
-                        newmissile(player1.rect.centerx-200,player1.rect.centery)
-                        newmissile(player1.rect.centerx+200,player1.rect.centery)
+                        newmissile(player2.rect.centerx,player2.rect.centery)
+                        newmissile(player2.rect.centerx-200,player2.rect.centery)
+                        newmissile(player2.rect.centerx+200,player2.rect.centery)
                         missile_sound.play()
                 if event.key == pygame.K_p:
                        pause()
@@ -4107,7 +4115,7 @@ def cooperation1():
                         quitgame()
                 if event.key == pygame.K_m:
                     player1.shoot() 
-                if event.key == pygame.K_LCTRL:
+                if event.key == pygame.K_q:
                     player2.shoot()
         current_time = pygame.time.get_ticks()
         elapsed_time = current_time - start_time - elapsed_pause_time
@@ -4190,6 +4198,7 @@ def cooperation1():
 
             bulletup_chance = random.randrange(0,100)
             if bulletup_chance > 95:
+                newbulletup()
                 newbulletup()
             speedup_chance = random.randrange(0,100)
             if speedup_chance > 95:
@@ -4496,6 +4505,7 @@ def cooperation1():
             enemy3.ph -= 700
         # regenerate enemy1
         if enemy1.ph <= 0:
+            newbulletup()
             newbulletup()
             player1.score += 100
             enemy1 = newenemy1()
@@ -5279,8 +5289,9 @@ def cooperation2():
     speedup.rect.y = -3500
     ultbulletup = newultbulletup()
     ultbulletup.rect.y = - 1800
-    bulletup = newultbulletup()
+    ultbulletup = newultbulletup()
     ultbulletup.rect.y = - 1900
+    
 
     running = True
     start_time = pygame.time.get_ticks()  # 게임 시작 시간 저장
@@ -5309,17 +5320,17 @@ def cooperation2():
                         newmissile(player1.rect.centerx-200,player1.rect.centery)
                         newmissile(player1.rect.centerx+200,player1.rect.centery)
                         missile_sound.play()
-                if event.key == pygame.K_z:
+                if event.key == pygame.K_a:
                     if player2.shield > 0:
                         player2.shield -= 1
                         newshield2(player2.rect.center)
                         shield_sound.play()
-                if event.key == pygame.K_LSHIFT:
+                if event.key == pygame.K_w:
                     if player2.missile > 0:
                         player2.missile -= 1
-                        newmissile(player1.rect.centerx,player1.rect.centery)
-                        newmissile(player1.rect.centerx-200,player1.rect.centery)
-                        newmissile(player1.rect.centerx+200,player1.rect.centery)
+                        newmissile(player2.rect.centerx,player2.rect.centery)
+                        newmissile(player2.rect.centerx-200,player2.rect.centery)
+                        newmissile(player2.rect.centerx+200,player2.rect.centery)
                         missile_sound.play()
                 if event.key == pygame.K_p:
                        pause()
@@ -5327,7 +5338,7 @@ def cooperation2():
                         quitgame()
                 if event.key == pygame.K_m:
                     player1.shoot() 
-                if event.key == pygame.K_LCTRL:
+                if event.key == pygame.K_q:
                     player2.shoot()
         current_time = pygame.time.get_ticks()
         elapsed_time = current_time - start_time - elapsed_pause_time
@@ -5405,6 +5416,7 @@ def cooperation2():
             player1.score += 10
             bulletup_chance = random.randrange(0,100)
             if bulletup_chance > 95:
+                newbulletup()
                 newbulletup()
             speedup_chance = random.randrange(0,100)
             if speedup_chance > 95:
@@ -5711,6 +5723,7 @@ def cooperation2():
             enemy3.ph -= 700
         # regenerate enemy1
         if enemy1.ph <= 0:
+            newbulletup()
             newbulletup()
             player1.score += 100
             enemy1 = newenemy1()
